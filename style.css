@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200");
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 body {
   font-family: "Raleway", sans-serif;
   background: #eee;
@@ -15,6 +17,9 @@ body {
   animation: entry 1s linear 1;
 }
 @media only screen and (min-width: 1000px) {
+  .title {
+    width: 50%;
+  }
   .wrapper {
     top: 10%;
     left: 40%;
@@ -44,6 +49,11 @@ body {
   }
   .card-container:hover .img {
     opacity: 0;
+  }
+  .img {
+    animation: upAndDown;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
   }
 }
 .details {
@@ -97,7 +107,7 @@ body {
   text-align: center;
   color: #fff;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: bolder;
   text-transform: uppercase;
 }
 
@@ -287,4 +297,60 @@ canvas {
     1px -4px 0 #082d6d, 1px -5px 0 #082d6d, 1px -6px 0 #082d6d,
     1px -7px 0 #082d6d, 1px -8px 0 #082d6d, 5px -13px 15px black,
     5px -13px 25px #082d6d;
+@keyframes upAndDown {
+  50% {
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+svg {
+  display: block;
+  font: 10.5em "Montserrat";
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #4361ee;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #4cc9f0;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #f9f9f9;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #bd0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #fdb731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
 }
