@@ -297,6 +297,7 @@ canvas {
     1px -4px 0 #082d6d, 1px -5px 0 #082d6d, 1px -6px 0 #082d6d,
     1px -7px 0 #082d6d, 1px -8px 0 #082d6d, 5px -13px 15px black,
     5px -13px 25px #082d6d;
+}
 @keyframes upAndDown {
   50% {
     transform: translateY(-2rem);
