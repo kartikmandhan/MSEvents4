@@ -110,13 +110,11 @@ body {
   text-transform: uppercase;
 }
 
-@media (hover: hover) {
-  .card-container:hover {
-    cursor: pointer;
-    transform: rotate(0deg) scale(1) translateY(10px) !important;
-    transition: 0.5s all ease !important;
-    z-index: 400;
-  }
+.card-container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px) !important;
+  transition: 0.5s all ease !important;
+  z-index: 400;
 }
 
 .story {
