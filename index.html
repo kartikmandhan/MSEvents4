@@ -17,42 +17,7 @@
     <body>
         <canvas id="canvas"></canvas>
         <div class="container py-5 ">
-            <h1> <svg class=" specialtext img-fluid" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                    viewBox="0 0 750 200" preserveAspectRatio="xMidYMid meet">
-                    <defs>
-                        <filter id="texteffect">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="4"></feGaussianBlur>
-                            <feComponentTransfer>
-                                <feFuncA type="linear" slope="1.5" intercept="0"></feFuncA>
-                            </feComponentTransfer>
-                            <feComposite result="outer" in2="SourceGraphic" operator="out"></feComposite>
-                            <feGaussianBlur result="pre-inner" in="SourceGraphic" stdDeviation="2"></feGaussianBlur>
-                            <feComposite in="SourceGraphic" in2="pre-inner" operator="out"></feComposite>
-                            <feComponentTransfer result="inner">
-                                <feFuncA type="linear" slope="7.5" intercept="0"></feFuncA>
-                            </feComponentTransfer>
-                            <feMerge>
-                                <feMergeNode in="outer"></feMergeNode>
-                                <feMergeNode in="inner"></feMergeNode>
-                            </feMerge>
-                            <!-- <feGaussianBlur stdDeviation="1"></feGaussianBlur> -->
-                        </filter>
-                        <linearGradient id="gradient" color-interpolation="sRGB" spreadMethod="repeat" x1="0" x2="0.5"
-                            y1="0.02" y2="0">
-                            <stop stop-color="#48cae4" offset="0%"></stop>
-                            <stop stop-color="#fff" offset="33%"></stop>
-                            <stop stop-color="#fff" offset="66%"></stop>
-                            <stop stop-color="#fff" offset="100%"></stop>
-                        </linearGradient>
-                        <mask id="textMask">
-                            <g filter="url(#texteffect)">
-                                <text id="text" x="375" y="150" text-anchor="middle" fill="#fff">EVENTS</text>
-                            </g>
-                        </mask>
-                    </defs>
-                    <rect id="fill" mask="url(#textMask)" fill="url(#gradient)" x="0" y="0" width="4000" height="200">
-                    </rect>
-                </svg>
+            <h1 class="text-center display-2 "> EVENTS
             </h1>
             <div class=" mb-5  wrapper  row ">
                 <div class="col-md-4 d-flex justify-content-center col-sm-6">

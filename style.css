@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200");
-
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 body {
   font-family: "Raleway", sans-serif;
   background: #eee;
 }
-
+h1 {
+  font-family: "PT Serif", serif;
+}
 .card-container {
-  top: 0%;
   width: 300px;
   /* height: 100%; */
   transition: 0.5s all ease !important;
-  transform: rotateX(60deg) scale(0.7) !important;
-  perspective: 900px !important;
+  transform: perspective(800px) rotateX(60deg) scale(0.7) !important;
   /* box-shadow: 0px 20px 50px #555; */
   animation: entry 1s linear 1;
 }
@@ -20,10 +20,7 @@ body {
     width: 50%;
   }
   .wrapper {
-    top: 10%;
-    left: 40%;
     height: 350px;
-    transform: perspective(900px);
     perspective: 900px;
   }
   .card-container:hover .moduleTitle {
@@ -275,27 +272,7 @@ canvas {
   color: #32e0c4;
   text-decoration: none;
 }
-.threeD {
-  color: white;
-  white-space: nowrap;
-  /* transform: translate(-50%, -50%); */
-  font-size: 3rem;
-  font-family: sans-serif;
-  letter-spacing: 0.1em;
-  transition: 0.3s;
-  text-shadow: 1px 1px 0 #082d6d, 1px 2px 0 #082d6d, 1px 3px 0 #082d6d,
-    1px 4px 0 #082d6d, 1px 5px 0 #082d6d, 1px 6px 0 #082d6d, 1px 7px 0 #082d6d,
-    1px 8px 0 #082d6d, 5px 13px 15px #082d6d;
-}
 
-.threeD:hover {
-  transition: 0.3s;
-  transform: scale(1.1);
-  text-shadow: 1px -1px 0 #082d6d, 1px -2px 0 #082d6d, 1px -3px 0 #082d6d,
-    1px -4px 0 #082d6d, 1px -5px 0 #082d6d, 1px -6px 0 #082d6d,
-    1px -7px 0 #082d6d, 1px -8px 0 #082d6d, 5px -13px 15px black,
-    5px -13px 25px #082d6d;
-}
 @keyframes upAndDown {
   50% {
     transform: translateY(-2rem);
@@ -303,74 +280,5 @@ canvas {
 
   100% {
     transform: translateY(0);
-  }
-}
-
-svg {
-  display: block;
-  font: 8.5rem;
-  width: 960px;
-  height: 300px;
-  margin: 0 auto;
-}
-
-.text-copy {
-  fill: none;
-  stroke: white;
-  stroke-dasharray: 6% 29%;
-  stroke-width: 5px;
-  stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1) {
-  stroke: #4361ee;
-  animation-delay: -1;
-}
-
-.text-copy:nth-child(2) {
-  stroke: #4cc9f0;
-  animation-delay: -2s;
-}
-
-.text-copy:nth-child(3) {
-  stroke: #f9f9f9;
-  animation-delay: -3s;
-}
-
-.text-copy:nth-child(4) {
-  stroke: #bd0034;
-  animation-delay: -4s;
-}
-
-.text-copy:nth-child(5) {
-  stroke: #fdb731;
-  animation-delay: -5s;
-}
-
-@import "https://fonts.googleapis.com/css?family=Righteous";
-/* 
-.specialtext {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-#text {
-  font-size: 100px;
-  font-family: Righteous;
-}
-
-#fill {
-  animation: shift 5s linear infinite;
-}
-
-@keyframes shift {
-  0% {
-    x: 0;
-  }
-  100% {
-    x: -2000;
   }
 }
