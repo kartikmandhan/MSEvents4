@@ -23,6 +23,7 @@ body {
     top: 10%;
     left: 40%;
     height: 350px;
+    transform: perspective(900px);
     perspective: 900px;
   }
   .card-container:hover .moduleTitle {
