@@ -307,7 +307,7 @@ canvas {
 
 svg {
   display: block;
-  font: 10.5em "Montserrat";
+  font: 8.5rem;
   width: 960px;
   height: 300px;
   margin: 0 auto;
@@ -347,8 +347,29 @@ svg {
   animation-delay: -5s;
 }
 
-@keyframes stroke-offset {
+@import "https://fonts.googleapis.com/css?family=Righteous";
+/* 
+.specialtext {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+#text {
+  font-size: 100px;
+  font-family: Righteous;
+}
+
+#fill {
+  animation: shift 5s linear infinite;
+}
+
+@keyframes shift {
+  0% {
+    x: 0;
+  }
   100% {
-    stroke-dashoffset: -35%;
+    x: -2000;
   }
 }
