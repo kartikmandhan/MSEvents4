@@ -216,9 +216,9 @@ p {
 }
 
 .voltus {
-  --bg-color: -webkit-linear-gradient(to top, #ff5f6d, #ffc371);
-  --bg-color1: linear-gradient(to top, #ff5f6d, #ffc371);
-  --box-shadow-color: #f98235;
+  --bg-color: -webkit-linear-gradient(to right, #1488cc, #2b32b2);
+  --bg-color1: linear-gradient(to right, #1488cc, #2b32b2);
+  --box-shadow-color: #56b4d3;
 }
 
 .substantia {
