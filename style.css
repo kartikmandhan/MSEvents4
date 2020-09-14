@@ -323,7 +323,9 @@ canvas {
 
 .first {
   display: inline-block;
-  animation: firstSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation: firstSpan 2.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
   z-index: 1;
   position: relative;
 }
@@ -334,7 +336,9 @@ canvas {
 }
 
 .second {
-  animation: secondSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation: secondSpan 2.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
   font-weight: 100;
   z-index: -1;
   display: inline-block;
